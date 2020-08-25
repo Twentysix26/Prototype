@@ -1,6 +1,8 @@
-# This workflow will install Python dependencies, run tests and lint with a single version of Python
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
-
+#    - name: Persist file
+#      uses: actions/upload-artifact@v2
+#      with:
+#        name: outdir
+#        path: out.txt
 name: Python application
 
 on:
@@ -12,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        persist-credentials: false
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
@@ -19,8 +24,12 @@ jobs:
     - name: Run Script
       run: |
         python test.py > out.txt
-    - name: Persist file
-      uses: actions/upload-artifact@v2
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Job run" -a
+    - name: Push changes
+      uses: ad-m/github-push-action@master
       with:
-        name: outdir
-        path: out.txt
+        github_token: ${{ secrets.GITHUB_TOKEN }}
