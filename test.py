@@ -1,1 +1,2 @@
-print("hello\nthere")
+from datetime import datetime
+print(datetime.utcnow())
