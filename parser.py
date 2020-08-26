@@ -6,11 +6,11 @@ with open("repositories.yaml") as f:
 sh = ""
 
 repos = []
-repos.expand(data["approved"])
-repos.expand(data["unapproved"])
+repos.extend(data["approved"])
+repos.extend(data["unapproved"])
 
 for r in repos:
-    sh += f"git clone {r} && /"
+    sh += f"git clone {r} && / \n"
 
 with open("cloneme.sh", "w") as f:
     f.write(sh)
