@@ -11,10 +11,10 @@ if __name__ == "__main__":
     sh = ""
 
     repos = []
-    
-    if "approved" in data:
+
+    if data["approved"]:
         repos.extend(data["approved"])
-    if "unapproved" in data:
+    if data["unapproved"]:
         repos.extend(data["unapproved"])
 
     for r in repos:
