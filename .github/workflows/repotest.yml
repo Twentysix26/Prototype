@@ -20,5 +20,8 @@ jobs:
         chmod +x cloneme.sh
     - name: Clone repos
       run: ./cloneme.sh
-#    - name: Print repo content
-#      run: ls techcogsv3
+    - name: List repos
+      run: |
+        ls aikaterna-cogs
+        ls Dav-Cogs
+        ls FlapJack-Cogs
