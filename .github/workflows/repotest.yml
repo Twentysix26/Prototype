@@ -12,7 +12,9 @@ jobs:
 #      with:
 #        repository: 'https://gitlab.com/Eragon5779/techcogsv3.git'
 #        fetch-depth: 0
-    - name: Test
-      run: git status
+    - name: Clone test
+      run: git clone https://gitlab.com/Eragon5779/techcogsv3.git
+    - name: List files
+      run: ls techcogsv3
 #    - name: Print repo content
 #      run: ls techcogsv3
