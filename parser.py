@@ -10,7 +10,7 @@ repos.extend(data["approved"])
 repos.extend(data["unapproved"])
 
 for r in repos:
-    sh += f"git clone {r} && / \n"
+    sh += f"git clone {r}\n"
 
 with open("cloneme.sh", "w") as f:
     f.write(sh)
