@@ -1,6 +1,7 @@
 # List of approved repos
 # Will be parsed and categorized as "approved" by the indexer
 approved:
+  - https://github.com/fake/fake-repo-that-will-error-out
   - https://github.com/aikaterna/aikaterna-cogs
 
 # List of approved repos.
