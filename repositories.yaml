@@ -7,6 +7,7 @@ approved:
 # List of approved repos.
 # Will be parsed and categorized as "unapproved" by the indexer
 unapproved:
+  - https://gitlab.com/Eragon5779/TechCogsV3
   - https://github.com/Dav-Git/Dav-Cogs
   - https://github.com/flapjax/FlapJack-Cogs
 
