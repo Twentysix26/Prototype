@@ -1,14 +1,11 @@
 # List of approved repos
 # Will be parsed and categorized as "approved" by the indexer
 approved:
-  - https://github.com/fake/fake-repo-that-will-error-out
-  - https://github.com/aikaterna/aikaterna-cogs
 
 # List of approved repos.
 # Will be parsed and categorized as "unapproved" by the indexer
 unapproved:
-  - https://gitlab.com/Eragon5779/TechCogsV3
-  - https://github.com/Dav-Git/Dav-Cogs
+  - https://github.com/aikaterna/aikaterna-cogs/@v3
   - https://github.com/flapjax/FlapJack-Cogs
 
 # List of flagged cogs
