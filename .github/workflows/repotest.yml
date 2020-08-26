@@ -17,6 +17,7 @@ jobs:
       run: |
         python -m pip install pyyaml
         python parser.py
+        chmod +x cloneme.sh
     - name: Clone repos
       run: ./cloneme.sh
 #    - name: Print repo content
