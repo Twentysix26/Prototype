@@ -12,9 +12,9 @@ if __name__ == "__main__":
 
     repos = []
     
-    if "approved" in repos:
+    if "approved" in data:
         repos.extend(data["approved"])
-    if "unapproved" in repos:
+    if "unapproved" in data:
         repos.extend(data["unapproved"])
 
     for r in repos:
