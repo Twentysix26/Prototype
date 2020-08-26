@@ -1,0 +1,14 @@
+# List of approved repos
+# Will be parsed and categorized as "approved" by the indexer
+approved:
+  - https://github.com/aikaterna/aikaterna-cogs
+
+# List of approved repos.
+# Will be parsed and categorized as "unapproved" by the indexer
+unapproved:
+  - https://github.com/Dav-Git/Dav-Cogs
+  - https://github.com/flapjax/FlapJack-Cogs
+
+# List of flagged cogs
+# Cogs present in this list will be ignored by the indexer
+flagged-cogs:
